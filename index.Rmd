@@ -1,0 +1,35 @@
+---
+title: <br>La Science des données
+subtitle: "<i>Comment analyse-t-on des données ?</i>"
+date: .date[Septembre 2022]
+author: |
+  <br><br>
+  .author[Nicolas Casajus]
+  <br>
+  .email[nicolas.casajus@fondationbiodiversite.fr]
+  <br><br>
+  .author[Laura Mannocci]
+  <br>
+  .email[laura.mannocci@fondationbiodiversite.fr]
+  <br><br>
+output:
+  xaringan::moon_reader:
+    css: ["assets/css/xaringan-themer.css", "assets/css/custom.css"]
+    lib_dir: "assets/libs"
+    seal: true
+    yolo: false
+    self_contained: false
+    nature:
+      ratio: "4:3"
+      titleSlideClass: ["right", "middle"]
+      highlightStyle: 'zenburn'
+      highlightLines: false
+      countIncrementalSlides: false
+      slideNumberFormat: "%current% / %total%"
+      beforeInit: "assets/libs/macros.js"
+---
+
+
+## Introduction
+
+...
