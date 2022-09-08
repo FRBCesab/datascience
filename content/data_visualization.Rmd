@@ -1,7 +1,43 @@
----
-
 class: inverse, center, middle
+
 
 ```{r echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("assets/img/research-4.png")
 ```
+
+---
+
+
+## Est-ce un bon graphique ?
+
+.pull-left[
+```{r '3d-pie', echo=FALSE, eval=TRUE, dpi=300}
+dat <- c(19.4, 21.9, 54.1, 12.3, 36.0, 12.5)
+lab <- paste0(LETTERS[1:length(dat)], "\n(", dat, ")")
+
+par(font = 2, family = "serif", bg = "transparent")
+
+plotrix::pie3D(dat,
+      col = hcl.colors(length(dat), "Spectral"),
+      labels = lab, labelcex = 0.95, border = "#EAEAEA")
+```
+]
+
+--
+
+.pull-right[
+```{r 'barchart', echo=FALSE, eval=TRUE, dpi=300}
+dat <- c(19.4, 21.9, 54.1, 12.3, 36.0, 12.5, 0)
+lab <- LETTERS[1:length(dat)]
+ordre <- order(dat, decreasing = TRUE)
+dat <- dat[ordre]
+lab <- lab[ordre]
+
+par(font = 1, family = "serif", bg = "transparent", xaxs = "i", yaxs = "i", mgp = c(3, 0.2, 0))
+x <- barplot(dat, col = "#363636", font = 1,
+        names.arg = lab, border = "#363636", las = 1, axes = FALSE, cex.names = 1.2, ylim = c(0, 60))
+abline(h = seq(0, 50, 10), col = "#EAEAEA", lty = 1, lwd = 1)
+axis(2, seq(0, 50, 10), tick = FALSE, lwd = 0, las = 1, pos = 0, font = 1, cex.axis = 1.2)
+text(x[ , 1], dat, format(dat), cex = 0.9, pos = 3)
+```
+]
