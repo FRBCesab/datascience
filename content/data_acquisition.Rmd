@@ -1,0 +1,7 @@
+---
+
+class: inverse, center, middle
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/research-1.png")
+```

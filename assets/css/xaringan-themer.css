@@ -165,6 +165,6 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
-hr{border: 2px solid #0F3155;border-radius: 0px;}
+hr{border: 1px solid #91902F;border-radius: 0px;}
 
 .emph{color:#909025;}

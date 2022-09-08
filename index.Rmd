@@ -30,6 +30,26 @@ output:
 ---
 
 
-## Introduction
 
-...
+```{r child='content/introduction.Rmd'}
+```
+
+
+```{r child='content/data_acquisition.Rmd'}
+```
+
+
+```{r child='content/data_preparation.Rmd'}
+```
+
+
+```{r child='content/data_analysis.Rmd'}
+```
+
+
+```{r child='content/data_visualization.Rmd'}
+```
+
+
+```{r child='content/dissemination.Rmd'}
+```
