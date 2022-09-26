@@ -41,3 +41,18 @@ axis(2, seq(0, 50, 10), tick = FALSE, lwd = 0, las = 1, pos = 0, font = 1, cex.a
 text(x[ , 1], dat, format(dat), cex = 0.9, pos = 3)
 ```
 ]
+
+
+---
+
+data(penguins)
+
+penguins <- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
+
+ggplot(data = penguins, 
+       aes(x = body_mass_g,
+           y = flipper_length_mm)) +
+    geom_point(aes(color = species),
+               size = 4, alpha = 0.6) + theme_classic() +
+    geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
+    

@@ -138,7 +138,6 @@ class: inverse, center, middle
 
 &lt;img src="assets/img/research-2.png" width="95%" style="display: block; margin: auto;" /&gt;
 
-
 ---
 
 
@@ -161,6 +160,21 @@ class: inverse, center, middle
 .pull-right[
 ![](index_files/figure-html/barchart-1.png)&lt;!-- --&gt;
 ]
+
+
+---
+
+data(penguins)
+
+penguins &lt;- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
+
+ggplot(data = penguins, 
+       aes(x = body_mass_g,
+           y = flipper_length_mm)) +
+    geom_point(aes(color = species),
+               size = 4, alpha = 0.6) + theme_classic() +
+    geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
+    
 
 ---
 
