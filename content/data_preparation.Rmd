@@ -4,3 +4,36 @@ class: inverse, center, middle
 ```{r echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("assets/img/research-2.png")
 ```
+
+
+---
+
+## Bonnes pratiques de structuration des données
+
+<br />
+
+Exemple : Fichier de données Excel JUSTCONSERVATION 
+
+.big[.orange[**Qu'est ce qui ne va pas dans ce fichier ?**]]
+
+
+
+---
+
+
+## Bonnes pratiques de structuration des données
+
+<br />
+
+- .big[Pas de cellules fusionnées]
+
+- .big[Pas de caractères spéciaux]
+
+- .big[Noms de colonnes courts]
+
+- .big[Codage cohérent des facteurs]
+
+- .big[Codage cohérent des données manquantes]
+
+
+
