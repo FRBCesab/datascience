@@ -16,7 +16,7 @@ a.email{font-size:0.65em; color:#909025; font-weight:100;}
 
 
 .img-source-tiny{ font-size:70% }
-.big{font-size:1.5em;}
+.big{font-size:1.2em;}
 .btn-xs a{text-decoration:none;}
 .btn-xs a:visited{text-decoration:none;}
 .btn-xs a:hover, .btn-xs a:focus{color:white;}
@@ -26,3 +26,4 @@ a.email{font-size:0.65em; color:#909025; font-weight:100;}
 .github .fa-github:hover{color:#697c89;}
 .figure{text-align:center}
 .caption{font-size: 0.5em;}
+.orange{color: orange;}

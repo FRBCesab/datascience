@@ -3,3 +3,303 @@ class: inverse, center, middle
 ```{r echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("assets/img/research-1.png")
 ```
+
+---
+
+## Qu'est ce qu'une donnée ?
+
+<br /><br />
+
+--
+
+- .big[Ce qui est **connu ou admis** comme tel]
+<br />
+
+--
+<!--end-->
+
+- .big[Sur lequel on peut fonder un **raisonnement**]
+<br />
+
+--
+<!--end-->
+
+
+- .big[Sert de **point de départ pour une recherche**]
+
+
+
+
+---
+
+## Les types de données
+
+
+--
+<br />
+
+.big[**Structurées vs. non structurées**]
+
+
+
+
+
+
+---
+
+## Les types de données
+
+<br />
+
+.big[**Données structurées**]
+
+<br />
+
+- Schéma bien défini
+
+--
+
+- Typiquement présentées dans des tableaux
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/biodiv_an1.gif")
+```
+
+
+
+
+
+---
+  
+## Les types de données
+
+<br />
+
+.big[**Données non structurées**]
+
+<br />
+
+- Toutes les données qui ne sont pas structurées : texte, sons, images, vidéos ...
+
+--
+
+- D'ici 2025 on estime que 80 % des données seront non structurées
+
+--
+
+- Leurs **métadonnées** peuvent être structurées -> **semi-structurées**
+
+
+
+
+
+
+---
+  
+## Les données de biodiversité
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/biodivdata.png")
+```
+
+
+
+---
+  
+## Les données de biodiversité
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/biodiv-marin-terr.png")
+```
+
+
+
+---
+  
+## Les données de biodiversité
+
+
+.big[.orange[**Connaissez-vous des bases de données de biodiversité ?**]] 
+
+
+
+
+---
+  
+## Les données de biodiversité
+
+
+.big[**Bases géoréférencées : GBIF**] 
+
+Système mondial d'information sur la biodiversité
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/gbif.png")
+```
+
+
+---
+  
+## Les données de biodiversité
+
+.big[**Bases géoréférencées : GBIF**]  
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/gbif-fungi.png")
+```
+
+
+
+---
+  
+## Les données de biodiversité
+
+.big[**Bases géoréférencées : GBIF**] 
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/gbif-datasets.png")
+```
+
+
+
+
+
+---
+  
+## Les données de biodiversité
+
+.big[**Bases géoréférencées : GBIF**] 
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/gbif-ebird.png")
+```
+
+
+
+
+---
+  
+## Les données de biodiversité
+
+.big[**Bases géoréférencées : GBIF**] 
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/gbif-mercantour.png")
+```
+Couverture temporelle : 1 janvier 1850 - 17 avril 2020
+
+
+
+---
+  
+## Les données de biodiversité
+
+.big[**Bases géoréférencées : OBIS**] 
+
+Système mondial d'information sur la biodiversité marine (inclu dans GBIF)
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/obis.png")
+```
+
+
+
+
+
+---
+  
+## Les données de biodiversité
+
+.big[.orange[**Placer ces données selon des axes spatio-temporels**]] 
+
+-eBird ?
+
+-Suivi biodiversité du Parc du Mercantour ?
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/graphST-1.png")
+```
+
+
+
+
+
+---
+  
+## Les données de biodiversité
+
+.big[.orange[**Placer ces données selon des axes spatio-temporels**]] 
+
+-eBird ?
+
+-Suivi biodiversité du Parc du Mercantour ?
+
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/graphST-2.png")
+```
+
+
+
+---
+
+## Les données de biodiversité
+
+
+.big[**Bases non-géoréférencées : PanTHERIA**] 
+
+Base de données sur les traits des mammifères terrestres et marins
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/pantheria-1.png")
+```
+
+
+
+
+---
+
+## Les données de biodiversité
+
+.big[**Bases non-géoréférencées : PanTHERIA**] 
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/pantheria-2.png")
+```
+
+
+
+
+---
+
+## Les données de biodiversité
+
+.big[**Bases non-géoréférencées : PanTHERIA**] 
+
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/pantheria-3.png")
+```
+
+
+
+
+
+---
+
+## Les données de biodiversité
+
+<br /> <br />
+
+```{r echo=FALSE}
+dat <- cbind("Données" = c("GBIF et autres bases géoréférencées", "PanTHERIA"),
+             "Questions" = c("Biogéographie", "Écologie fonctionnelle"))
+knitr::kable(dat)
+```
+
