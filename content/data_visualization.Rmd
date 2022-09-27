@@ -7,8 +7,88 @@ knitr::include_graphics("assets/img/research-4.png")
 
 ---
 
+## Comment présenter un résultat ?
 
-## Est-ce un bon graphique ?
+<br/>
+
+--
+
+- Dans le texte
+
+<br/>
+
+
+- Sous forme de tableau
+
+<br/>
+
+
+- Sous forme de graphique
+
+---
+
+## Graphique : les questions à se poser
+
+<br />
+
+--
+
+- Quel est le message que je souhaite diffuser ?
+- Ai-je besoin de faire un graphique ?
+- Quelles sont les données dont je dispose ?
+- Quel type de graphique puis-je utiliser ?
+- Quel symbolisme utiliser ?
+- Quel référentiel utiliser ?
+- Dois-je transformer mes données ?
+- ...
+- Le graphique montre-t-il bien ce que je veux montrer ?
+- Mon message est-il clair ?
+
+---
+
+## Le symbolisme
+
+<br/>
+
+```{r echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("assets/img/symbols.png")
+```
+
+---
+
+## Le référentiel
+
+
+<br/>
+
+```{r echo=FALSE, out.width="33%", fig.align="default", fig.show="hold"}
+knitr::include_graphics("assets/img/cartesian.png")
+knitr::include_graphics("assets/img/spatial.png")
+knitr::include_graphics("assets/img/polar.png")
+```
+
+.small[Source: <https://r-graph-gallery.com/index.html>]
+
+---
+
+## Les types de graphiques
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("assets/img/data-to-viz.png")
+```
+
+.small[Source: <https://www.data-to-viz.com/>]
+
+
+---
+
+## Les éléments d'un graphique
+
+---
+
+## Qu'est-ce-qu'il ne va pas ?
+
+
 
 .pull-left[
 ```{r '3d-pie', echo=FALSE, eval=TRUE, dpi=300}
