@@ -248,17 +248,9 @@ knitr::include_graphics("assets/img/barplot-members.png")
 
 ---
 
----
+## Exercices
 
-```{r eval=FALSE}
-data(penguins)
+```{r echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("assets/img/map-members.png")
+```
 
-penguins <- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
-
-ggplot(data = penguins, 
-       aes(x = body_mass_g,
-           y = flipper_length_mm)) +
-    geom_point(aes(color = species),
-               size = 4, alpha = 0.6) + theme_classic() +
-    geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
-```    

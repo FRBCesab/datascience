@@ -3,9 +3,9 @@
   <head>
     <title> La Science des données</title>
     <meta charset="utf-8" />
-    <script src="assets/libs/header-attrs-2.14/header-attrs.js"></script>
-    <link href="assets/libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="assets/libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+    <script src="assets/libs/header-attrs-2.16/header-attrs.js"></script>
+    <link href="assets/libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet" />
+    <link href="assets/libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
   </head>
@@ -652,21 +652,10 @@ Données montrant le nombre de chercheurs CESAB par pays de provenance (43 pays,
 
 ---
 
----
+## Exercices
 
+&lt;img src="assets/img/map-members.png" width="100%" style="display: block; margin: auto;" /&gt;
 
-```r
-data(penguins)
-
-penguins &lt;- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
-
-ggplot(data = penguins, 
-       aes(x = body_mass_g,
-           y = flipper_length_mm)) +
-    geom_point(aes(color = species),
-               size = 4, alpha = 0.6) + theme_classic() +
-    geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
-```
 
 ---
 
