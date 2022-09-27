@@ -8,18 +8,18 @@ knitr::include_graphics("assets/img/research-1.png")
 
 ## Qu'est ce qu'une donnée ?
 
-<br /><br />
+<br /><br /><br />
 
 --
 
 - .big[Ce qui est **connu ou admis** comme tel]
-<br />
+<br /><br />
 
 --
 <!--end-->
 
 - .big[Sur lequel on peut fonder un **raisonnement**]
-<br />
+<br /><br />
 
 --
 <!--end-->
@@ -40,7 +40,9 @@ knitr::include_graphics("assets/img/research-1.png")
 
 .big[**Structurées vs. non structurées**]
 
-
+```{r echo=FALSE, out.width="95%", fig.align="center"}
+knitr::include_graphics("assets/img/data-types.png")
+```
 
 
 
@@ -55,7 +57,7 @@ knitr::include_graphics("assets/img/research-1.png")
 
 <br />
 
-- Schéma bien défini
+- Formatées selon une structure précise
 
 --
 
@@ -65,6 +67,9 @@ knitr::include_graphics("assets/img/research-1.png")
 knitr::include_graphics("assets/img/biodiv_an1.gif")
 ```
 
+--
+
+NB : distinguer variables **quantitatives** et **qualitatives** (ordonnées vs non ordonnées)
 
 
 
@@ -216,7 +221,7 @@ knitr::include_graphics("assets/img/obis.png")
   
 ## Les données de biodiversité
 
-.big[.orange[**Placer ces données selon des axes spatio-temporels**]] 
+.big[.orange[**Placer ces données selon la couverture spatio-temporelle**]] 
 
 -eBird ?
 
@@ -235,7 +240,7 @@ knitr::include_graphics("assets/img/graphST-1.png")
   
 ## Les données de biodiversité
 
-.big[.orange[**Placer ces données selon des axes spatio-temporels**]] 
+.big[.orange[**Placer ces données selon la couverture spatio-temporelle**]] 
 
 -eBird ?
 
