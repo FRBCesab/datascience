@@ -486,7 +486,11 @@ class: inverse, center, middle
 - Quel symbolisme utiliser ?
 - Quel référentiel utiliser ?
 - Dois-je transformer mes données ?
-- ...
+
+&lt;!--end--&gt;
+
+--
+
 - Le graphique montre-t-il bien ce que je veux montrer ?
 - Mon message est-il clair ?
 
@@ -507,7 +511,7 @@ class: inverse, center, middle
 
 &lt;img src="assets/img/cartesian.png" width="33%" /&gt;&lt;img src="assets/img/spatial.png" width="33%" /&gt;&lt;img src="assets/img/polar.png" width="33%" /&gt;
 
-.small[Source: &lt;https://r-graph-gallery.com/index.html&gt;]
+.ssmall[Source: &lt;https://r-graph-gallery.com/index.html&gt;]
 
 ---
 
@@ -515,12 +519,17 @@ class: inverse, center, middle
 
 &lt;img src="assets/img/data-to-viz.png" width="80%" style="display: block; margin: auto;" /&gt;
 
-.small[Source: &lt;https://www.data-to-viz.com/&gt;]
+.ssmall[Source: &lt;https://www.data-to-viz.com/&gt;]
 
 
 ---
 
 ## Les éléments d'un graphique
+
+&lt;img src="assets/img/loiseau-et-al.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+.ssmall[Loiseau N. _et al_ (2020) Nature Communications. &lt;http://dx.doi.org/10.1038/s41467-020-18779-w&gt;]
+
 
 ---
 
@@ -541,6 +550,8 @@ class: inverse, center, middle
 
 ---
 
+
+```r
 data(penguins)
 
 penguins &lt;- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
@@ -551,7 +562,7 @@ ggplot(data = penguins,
     geom_point(aes(color = species),
                size = 4, alpha = 0.6) + theme_classic() +
     geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
-    
+```
 
 ---
 
@@ -559,6 +570,31 @@ ggplot(data = penguins,
 class: inverse, center, middle
 
 &lt;img src="assets/img/research-5.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Dissémination / Déploiement
+
+&lt;br/&gt;
+
+### Dissémination
+
+- Publication scientifique
+- Présentation / poster
+
+--
+
+&lt;br/&gt;
+
+### Déploiement
+
+- Partage du code &amp; données
+  - Exemple sur GitHub : &lt;https://github.com/FRBCesab/ecorar/&gt;
+
+&lt;!--end--&gt;
+
+- Supports complémentaires
+  - Application Web : &lt;https://ahasverus.shinyapps.io/bioclimaticatlas/&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

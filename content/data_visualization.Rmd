@@ -40,7 +40,11 @@ knitr::include_graphics("assets/img/research-4.png")
 - Quel symbolisme utiliser ?
 - Quel référentiel utiliser ?
 - Dois-je transformer mes données ?
-- ...
+
+<!--end-->
+
+--
+
 - Le graphique montre-t-il bien ce que je veux montrer ?
 - Mon message est-il clair ?
 
@@ -67,7 +71,7 @@ knitr::include_graphics("assets/img/spatial.png")
 knitr::include_graphics("assets/img/polar.png")
 ```
 
-.small[Source: <https://r-graph-gallery.com/index.html>]
+.ssmall[Source: <https://r-graph-gallery.com/index.html>]
 
 ---
 
@@ -77,12 +81,19 @@ knitr::include_graphics("assets/img/polar.png")
 knitr::include_graphics("assets/img/data-to-viz.png")
 ```
 
-.small[Source: <https://www.data-to-viz.com/>]
+.ssmall[Source: <https://www.data-to-viz.com/>]
 
 
 ---
 
 ## Les éléments d'un graphique
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("assets/img/loiseau-et-al.png")
+```
+
+.ssmall[Loiseau N. _et al_ (2020) Nature Communications. <http://dx.doi.org/10.1038/s41467-020-18779-w>]
+
 
 ---
 
@@ -125,6 +136,7 @@ text(x[ , 1], dat, format(dat), cex = 0.9, pos = 3)
 
 ---
 
+```{r eval=FALSE}
 data(penguins)
 
 penguins <- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
@@ -135,4 +147,4 @@ ggplot(data = penguins,
     geom_point(aes(color = species),
                size = 4, alpha = 0.6) + theme_classic() +
     geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
-    
+```    

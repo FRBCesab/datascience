@@ -3,3 +3,28 @@ class: inverse, center, middle
 ```{r echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("assets/img/research-5.png")
 ```
+
+---
+
+## Dissémination / Déploiement
+
+<br/>
+
+### Dissémination
+
+- Publication scientifique
+- Présentation / poster
+
+--
+
+<br/>
+
+### Déploiement
+
+- Partage du code & données
+  - Exemple sur GitHub : <https://github.com/FRBCesab/ecorar/>
+
+<!--end-->
+
+- Supports complémentaires
+  - Application Web : <https://ahasverus.shinyapps.io/bioclimaticatlas/>
