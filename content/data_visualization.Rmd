@@ -34,6 +34,7 @@ knitr::include_graphics("assets/img/research-4.png")
 --
 
 - Quel est le message que je souhaite diffuser ?
+- Quel est mon public cible ?
 - Ai-je besoin de faire un graphique ?
 - Quelles sont les données dont je dispose ?
 - Quel type de graphique puis-je utiliser ?
@@ -57,6 +58,37 @@ knitr::include_graphics("assets/img/research-4.png")
 ```{r echo=FALSE, out.width="100%", fig.align="center"}
 knitr::include_graphics("assets/img/symbols.png")
 ```
+
+---
+
+## Les couleurs
+
+<br/>
+
+```{r echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("assets/img/palette-1.png")
+```
+
+---
+
+## Les couleurs
+
+<br/>
+
+```{r echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("assets/img/palette-2.png")
+```
+
+---
+
+## Les couleurs
+
+<br/>
+
+```{r echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("assets/img/palette-3.png")
+```
+
 
 ---
 
@@ -97,14 +129,14 @@ knitr::include_graphics("assets/img/loiseau-et-al.png")
 
 ---
 
-## Qu'est-ce-qu'il ne va pas ?
+## Recommandations
 
 
 
 .pull-left[
 ```{r '3d-pie', echo=FALSE, eval=TRUE, dpi=300}
 dat <- c(19.4, 21.9, 54.1, 12.3, 36.0, 12.5)
-lab <- paste0(LETTERS[1:length(dat)], "\n(", dat, ")")
+lab <- paste0(LETTERS[1:length(dat)])#, "\n(", dat, ")")
 
 par(font = 2, family = "serif", bg = "transparent")
 
@@ -133,6 +165,88 @@ text(x[ , 1], dat, format(dat), cex = 0.9, pos = 3)
 ```
 ]
 
+---
+
+## Recommandations
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("assets/img/spaghetti-1.png")
+```
+
+.ssmall[Source: <https://www.data-to-viz.com/caveat/spaghetti.html>]
+
+---
+
+## Recommandations
+
+
+
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("assets/img/spaghetti-2.png")
+```
+
+.ssmall[Source: <https://www.data-to-viz.com/caveat/spaghetti.html>]
+
+---
+
+## Recommandations
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("assets/img/spaghetti-3.png")
+```
+
+.ssmall[Source: <https://www.data-to-viz.com/caveat/spaghetti.html>]
+
+---
+
+## Recommandations
+
+```{r echo=FALSE, out.width="60%", fig.align="center"}
+knitr::include_graphics("assets/img/spaghetti-4.png")
+```
+
+.ssmall[Source: <https://www.data-to-viz.com/caveat/spaghetti.html>]
+
+---
+
+## Exercices
+
+
+.pull-left[.small[
+```{r results='asis', echo = FALSE}
+members <- readxl::read_xlsx(here::here("data", "data-members.xlsx"))
+members <- as.data.frame(members)[ , 1]
+
+members <- as.data.frame(table(members))
+colnames(members) <- c("Country", "n")
+
+knitr::kable(head(members, 10), row.names = FALSE, align = c("l", "r"))
+```
+<br/>
+Données montrant le nombre de chercheurs CESAB par pays de provenance (43 pays, hors France)
+]]
+
+.pull-right[
+`r fontawesome::fa_i("hand-point-right")`&nbsp; Comment représenter ces données graphiquement ?
+]
+
+
+
+---
+
+.pull-leftt[
+## Exercices
+]
+
+.pull-rightt[
+```{r echo=FALSE, out.width="80%", fig.align="center"}
+knitr::include_graphics("assets/img/barplot-members.png")
+```
+]
+
+
+
+---
 
 ---
 

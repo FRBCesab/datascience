@@ -1,5 +1,6 @@
 png(filename = here::here("assets", "img", "symbols.png"), 
     width = 12, height = 6, units = "in", pointsize = 14, res = 300)
+
 x_grad <- seq(-2.5, 6.5)
 y_grad <- seq(1.5, 5.5)
 
