@@ -1,16 +1,4 @@
-class: inverse, center, middle
-
-## Introduction
-
-<hr>
-
----
-
-## La Recherche
-
----
-
-## La Recherche
+## La méthode scientifique
 
 ```{r echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("assets/img/research.png")
@@ -18,82 +6,10 @@ knitr::include_graphics("assets/img/research.png")
 
 ---
 
-## Une nouvelle ère
-
-<br /><br />
-
-```{r echo=FALSE, out.width="75%", fig.align="center"}
-knitr::include_graphics("assets/img/bigdata.png")
-```
-
----
-
-## La Science des données
-
----
-
-## La Science des données
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/venn-1.png")
-```
-
----
-
-## La Science des données
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/venn-2.png")
-```
-
----
-
-## La Science des données
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/venn-3.png")
-```
-
----
-
-## La Science des données
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/venn-4.png")
-```
-
----
-
-## La Science des données
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/venn-5.png")
-```
-
----
-
-## La Science des données
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/venn-6.png")
-```
-
----
-
-## La Science des données
+## La science des données
 
 ```{r echo=FALSE, out.width="65%", fig.align="center"}
 knitr::include_graphics("assets/img/venn-7.png")
-```
-
----
-
-## Reproductibilité
-
-<br /><br />
-
-```{r echo=FALSE, out.width="65%", fig.align="center"}
-knitr::include_graphics("assets/img/softwares.png")
 ```
 
 
