@@ -24,7 +24,7 @@ abline(v = seq(10, 100, by = 10), lty = 1, lwd = .25, col = "#EAEAEA")
 par(mgp = c(0, 0, 0))
 axis(1, at = seq(0, 100, by = 10), cex.axis = 0.75, lwd.ticks = 0, lwd = 0.25)
 
-text(50, 3, "Provenance des chercheurs\nCESAB (hors France)", font = 2, pos = 4)
+text(50, 3, "Provenance des chercheur.e.s\nCesab (hors France)", font = 2, pos = 4)
 text(104, -1.15, "Nombre de chercheurs", pos = 2, xpd = TRUE, cex = .85, font = 2)
 
 dev.off()

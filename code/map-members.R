@@ -132,7 +132,7 @@ for (i in 1:nrow(classes)) {
 ## Title ----
 
 text(x = 0, y = y_middle + y_height - 100000, col = texte, font = 2, pos = 3,
-     labels = "Nombre de chercheurs CESAB (hors France)")
+     labels = "Nombre de chercheur.e.s Cesab (hors France)")
 
 par(xpd = FALSE)
 
