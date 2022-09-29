@@ -8,7 +8,7 @@ knitr::include_graphics("assets/img/research-2.png")
 
 ---
 
-## Bonnes pratiques de structuration des données
+## Préparer des données = les explorer
 
 <br />
 

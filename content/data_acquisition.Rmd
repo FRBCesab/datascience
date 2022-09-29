@@ -92,7 +92,7 @@ NB : distinguer variables **quantitatives** et **qualitatives** (ordonnées vs n
 
 --
 
-- Leurs **métadonnées** peuvent être structurées -> **semi-structurées**
+- Leurs **métadonnées** peuvent être structurées 
 
 
 
@@ -262,6 +262,8 @@ knitr::include_graphics("assets/img/graphST-2.png")
 
 Base de données sur les traits des mammifères terrestres et marins
 
+--
+
 ```{r echo=FALSE, out.width="95%", fig.align="center"}
 knitr::include_graphics("assets/img/pantheria-1.png")
 ```
@@ -304,7 +306,7 @@ knitr::include_graphics("assets/img/pantheria-3.png")
 
 ```{r echo=FALSE}
 dat <- cbind("Données" = c("GBIF et autres bases géoréférencées", "PanTHERIA"),
-             "Questions" = c("Biogéographie", "Écologie fonctionnelle"))
+             "Questions de recherche" = c("Biogéographie", "Écologie fonctionnelle"))
 knitr::kable(dat)
 ```
 
