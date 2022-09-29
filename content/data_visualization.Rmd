@@ -31,11 +31,15 @@ knitr::include_graphics("assets/img/research-4.png")
 
 <br />
 
---
 
 - Quel est le message que je souhaite diffuser ?
 - Quel est mon public cible ?
 - Ai-je besoin de faire un graphique ?
+
+<!--end-->
+
+--
+
 - Quelles sont les données dont je dispose ?
 - Quel type de graphique puis-je utiliser ?
 - Quel symbolisme utiliser ?
@@ -223,7 +227,7 @@ colnames(members) <- c("Country", "n")
 knitr::kable(head(members, 10), row.names = FALSE, align = c("l", "r"))
 ```
 <br/>
-Données montrant le nombre de chercheurs CESAB par pays de provenance (43 pays, hors France)
+Données montrant le nombre de chercheur.e.s Cesab par pays de provenance (43 pays, hors France)
 ]]
 
 .pull-right[
@@ -248,17 +252,9 @@ knitr::include_graphics("assets/img/barplot-members.png")
 
 ---
 
----
+## Exercices
 
-```{r eval=FALSE}
-data(penguins)
+```{r echo=FALSE, out.width="100%", fig.align="center"}
+knitr::include_graphics("assets/img/map-members.png")
+```
 
-penguins <- penguins[penguins$species %in% c("Adelie", "Gentoo"), ]
-
-ggplot(data = penguins, 
-       aes(x = body_mass_g,
-           y = flipper_length_mm)) +
-    geom_point(aes(color = species),
-               size = 4, alpha = 0.6) + theme_classic() +
-    geom_smooth(method="lm", aes(group = species), se = FALSE, color = "black") + xlab("Masse corporelle (en g)") + ylab("Longueur de nageoire (en mm)") + scale_color_discrete(name = "Espèce")
-```    
